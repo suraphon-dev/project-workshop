@@ -33,6 +33,7 @@ import ImageArticle3 from '~/assets/images/article-3.jpg'
 import PanelTags from './ui/PanelTags.vue'
 export default {
   components: { PanelTags },
+
   data() {
     return {
       imageArticle1: ImageArticle1,

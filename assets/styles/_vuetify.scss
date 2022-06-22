@@ -4,3 +4,15 @@
 .custom.v-text-field > .v-input__control > .v-input__slot:after {
   border-style: none !important;
 }
+
+.theme--light.v-input input, .theme--light.v-input textarea {
+    color: white !important;
+}
+
+.theme--light.v-select .v-select__selections {
+    color: white !important;
+}
+
+.theme--light.v-icon {
+  //  color: white !important;
+}

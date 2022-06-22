@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" fixed temporary dark style="z-index: 999" width="340">
+    <v-navigation-drawer v-model="drawer" fixed temporary style="z-index: 999" width="340" dark>
       <div>
         <v-col xl="6" lg="6" md="6" cols="12" class="d-flex align-center ma-4">
           <v-app-bar-nav-icon @click="drawer = !drawer" color="white"></v-app-bar-nav-icon>
@@ -23,8 +23,7 @@
         </v-list>
       </div>
     </v-navigation-drawer>
-
-    <v-app-bar dark :height="setBarHeight">
+    <v-app-bar class="black" :height="setBarHeight">
       <v-row class="align-center">
         <v-col xl="6" lg="6" md="6" cols="12" class="d-flex align-center">
           <v-app-bar-nav-icon @click="drawer = !drawer" color="white"></v-app-bar-nav-icon>
@@ -66,23 +65,25 @@ export default {
       ]
     }
   },
+
   computed: {
     breakpoint() {
       return this.$vuetify.breakpoint.smAndDown
     },
+
     setBarHeight() {
       return this.breakpoint ? '200' : '120'
     }
   },
+
   methods: {
     focusSearch() {
       this.loading = true
     },
+
     focusSearchCancel() {
       this.loading = false
     }
   }
 }
 </script>
-
-<style lang="scss"></style>

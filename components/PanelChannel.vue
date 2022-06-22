@@ -11,14 +11,12 @@
         <span>อัปเดตทุกความรู้ด้านการเงินและการลงทุนก่อนใคร พร้อมอินเทรนด์ไปกับหลากหลายเรื่องราวไลฟ์สไตล์</span>
       </v-col>
     </v-row>
-
     <div class="px-12">
       <v-tabs v-model="tab" background-color="white" light show-arrows>
         <v-tab v-for="item in items" :key="item.tab">
           {{ item.tab }}
         </v-tab>
       </v-tabs>
-
       <v-tabs-items v-model="tab">
         <v-tab-item v-for="(item, index) in items" :key="index">
           <v-row class="my-6 align-center">

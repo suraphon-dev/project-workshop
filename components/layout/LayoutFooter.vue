@@ -40,9 +40,7 @@
           </div>
         </v-col>
       </v-row>
-
       <v-divider></v-divider>
-
       <v-row class="align-center ma-0">
         <v-col xl="6" lg="6" md="6" cols="12">
           <v-row>
@@ -62,7 +60,6 @@
         </v-col>
       </v-row>
     </v-card>
-
     <div class="white black--text pa-12" style="width: 100%">
       <v-row class="align-center">
         <v-col v-for="(item, index) in data.partner" :key="index" xl="3" lg="3" md="3" cols="6">
@@ -98,6 +95,7 @@ export default {
       }
     }
   },
+
   computed: {
     breakpoint() {
       return this.$vuetify.breakpoint.smAndDown
