@@ -18,7 +18,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap'
       }
     ]
   },

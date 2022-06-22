@@ -60,7 +60,7 @@ export default {
   bottom: -55px;
 
   @media (max-width: 960px) {
-    bottom: -105px;
+    bottom: -125px;
   }
 }
 </style>

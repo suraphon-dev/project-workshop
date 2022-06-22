@@ -48,4 +48,24 @@ export default {
   font-weight: bold;
   font-size: 24px;
 }
+
+.vueperslides__bullet .default {
+  background-color: rgba(255, 253, 253, 0.3);
+  border: 1px solid #adadb9;
+  box-shadow: none;
+  transition: 0.3s;
+  width: 16px;
+  height: 16px;
+}
+
+.vueperslides__bullet--active .default {
+  background-color: #594f74;
+}
+
+.vueperslides__bullet span {
+  display: block;
+  color: #fff;
+  font-size: 10px;
+  opacity: 0.8;
+}
 </style>

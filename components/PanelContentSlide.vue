@@ -1,5 +1,5 @@
 <template>
-  <v-container class="my-6">
+  <div class="my-6 padding-container">
     <v-carousel :show-arrows="false" hide-delimiter-background show-arrows-on-hover>
       <template v-for="(item, index) in slide">
         <v-carousel-item v-if="(index + 1) % columns === 1 || columns === 1" :key="index">
@@ -8,9 +8,9 @@
               <template v-if="+index + i < slide.length">
                 <v-col xl="4" lg="4" md="4" cols="12" :key="i">
                   <div v-if="+index + i < slide.length" :color="slide[+index + i]">
-                    <img :src="slide[+index + i].image" width="100%" height="210px" alt="" />
+                    <img :src="slide[+index + i].image" width="100%" height="300px" alt="" />
                     <div class="my-6">
-                      <h2>{{ slide[+index + i].title }}</h2>
+                      <h2 class="color-theme">{{ slide[+index + i].title }}</h2>
                     </div>
                   </div>
                 </v-col>
@@ -20,7 +20,7 @@
         </v-carousel-item>
       </template>
     </v-carousel>
-  </v-container>
+  </div>
 </template>
 
 <script>

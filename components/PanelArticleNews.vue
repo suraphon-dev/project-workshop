@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div class="padding-container">
     <v-row>
       <v-col xl="8" lg="8" md="8" cols="12">
         <div>
@@ -13,14 +13,14 @@
           <news-component />
         </div>
         <div class="panel-setprice">
-          <h2 class="text-title">Set Index</h2>
+          <h2 class="text-title color-theme">Set Index</h2>
           <div>
             <v-img :src="imageSetIndex" width="95%" height="auto" class="img-price" />
           </div>
         </div>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>

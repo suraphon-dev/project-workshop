@@ -1,14 +1,14 @@
 <template>
-  <v-container>
+  <div class="padding-container">
     <v-row class="align-center mb-12">
-      <v-col xl="5" lg="5" md="5" cols="12" style="padding-left: 50px">
+      <v-col xl="4" lg="4" md="4" cols="12" style="padding-left: 50px">
         <v-row class="align-center">
           <div class="line-title"></div>
-          <h1 style="padding: 0px 60px">KKP Channel</h1>
+          <h1 style="padding: 0px 60px" class="color-theme">KKP Channel</h1>
         </v-row>
       </v-col>
-      <v-col xl="7" lg="7" md="7" cols="12">
-        <span>อัปเดตทุกความรู้ด้านการเงินและการลงทุนก่อนใคร พร้อมอินเทรนด์ไปกับหลากหลายเรื่องราวไลฟ์สไตล์</span>
+      <v-col xl="8" lg="8" md="8" cols="12" class="mx-0 px-0">
+        <span class="grey--text">อัปเดตทุกความรู้ด้านการเงินและการลงทุนก่อนใคร พร้อมอินเทรนด์ไปกับหลากหลายเรื่องราวไลฟ์สไตล์</span>
       </v-col>
     </v-row>
     <div class="px-12">
@@ -25,15 +25,15 @@
             </v-col>
             <v-col xl="4" lg="4" md="4" cols="12" class="my-6">
               <div class="line-textcontent">
-                <h1 class="my-2">{{ item.tab }}</h1>
-                <span>{{ item.content }}</span>
+                <h1 class="my-2 color-theme">{{ item.tab }}</h1>
+                <span class="grey--text">{{ item.content }}</span>
               </div>
             </v-col>
           </v-row>
         </v-tab-item>
       </v-tabs-items>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>

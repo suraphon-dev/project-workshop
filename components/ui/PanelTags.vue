@@ -1,6 +1,6 @@
 <template>
   <div class="my-5 line-tag">
-    <span class="mx-3">{{ text }}</span>
+    <span class="mx-3 color-theme font-weight-bold">{{ text }}</span>
   </div>
 </template>
 

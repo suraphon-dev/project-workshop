@@ -36,7 +36,7 @@
                 <v-icon slot="append" color="white"> mdi-magnify </v-icon>
               </v-text-field>
             </v-col>
-            <v-col xl="2" lg="2" md="2" cols="4" class="px-8">
+            <v-col xl="2" lg="2" md="2" cols="4" class="px-4">
               <v-select v-model="language" class="custom" :items="['TH', 'EN']" />
             </v-col>
           </v-row>
