@@ -4,15 +4,17 @@
       <v-col xl="4" lg="4" md="4" cols="12" style="padding-left: 50px">
         <v-row class="align-center">
           <div class="line-title"></div>
-          <h1 style="padding: 0px 60px" class="color-theme">KKP Channel</h1>
+          <h1 style="padding: 0px 60px" class="color-theme" data-aos="fade-down">KKP Channel</h1>
         </v-row>
       </v-col>
       <v-col xl="8" lg="8" md="8" cols="12" class="mx-0 px-0">
-        <span class="grey--text">อัปเดตทุกความรู้ด้านการเงินและการลงทุนก่อนใคร พร้อมอินเทรนด์ไปกับหลากหลายเรื่องราวไลฟ์สไตล์</span>
+        <span class="grey--text" data-aos="fade-down">
+          อัปเดตทุกความรู้ด้านการเงินและการลงทุนก่อนใคร พร้อมอินเทรนด์ไปกับหลากหลายเรื่องราวไลฟ์สไตล์
+        </span>
       </v-col>
     </v-row>
     <div class="px-12">
-      <v-tabs v-model="tab" background-color="white" light show-arrows>
+      <v-tabs v-model="tab" slider-color="grey" color="basil" background-color="white" light show-arrows>
         <v-tab v-for="item in items" :key="item.tab">
           {{ item.tab }}
         </v-tab>
@@ -37,9 +39,11 @@
 </template>
 
 <script>
+import aosMixin from '~/mixins/aos'
 import VideoPlayerComponent from './VideoPlayerComponent.vue'
 export default {
   components: { VideoPlayerComponent },
+  mixins: [aosMixin],
 
   data() {
     return {

@@ -1,12 +1,14 @@
 <template>
   <div class="my-5 line-tag">
-    <span class="mx-3 color-theme font-weight-bold">{{ text }}</span>
+    <span class="mx-3 color-theme font-weight-bold" data-aos="fade-down">{{ text }}</span>
   </div>
 </template>
 
 <script>
+import aosMixin from '~/mixins/aos'
 export default {
-  props: ['text']
+  props: ['text'],
+  mixins: [aosMixin]
 }
 </script>
 

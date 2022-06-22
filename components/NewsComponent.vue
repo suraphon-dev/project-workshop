@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vueper-slides 3d fixed-height="475px" :arrows="false" arrows-outside bullets-outside :dragging-distance="50" autoplay>
+    <vueper-slides 3d fixed-height="350px" :arrows="false" arrows-outside bullets-outside :dragging-distance="50" autoplay>
       <vueper-slide v-for="(item, index) in slide" :key="index" :image="item.image" :title="item.title" :content="item.content" />
     </vueper-slides>
   </div>
